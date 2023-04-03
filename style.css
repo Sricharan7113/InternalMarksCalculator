@@ -1,0 +1,184 @@
+*{
+    margin: 0%;        
+}
+
+.Header{
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    background-color: #083966;
+}
+
+.Logo{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:x-large;
+    padding:10px;
+    color: aliceblue;
+}
+
+.Computation{
+    overflow-y: hidden;
+    width: 100%;
+    height:92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #447bae;
+
+}
+
+.Fields{
+    width:20%;
+    display: flex;
+    padding:20px;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(139, 134, 134, 0.137);
+    border: 1px solid black;
+    backdrop-filter: blur(3.1px);
+    border-radius: 8px;
+    margin:auto;    
+    /* padding-left:10%; */
+}
+
+.Fields:hover{
+    border: 2px solid rgb(9, 72, 112);
+}
+
+
+.Btn
+{
+    width:40%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+    background: rgba(143, 190, 183, 0.648);
+}
+
+.PortalBtn{
+ width:100px;
+ height: 40px;
+ margin:10px;
+}
+
+.Btn:hover{
+    background-color: #195b9ae5;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+}
+
+
+.Internal{
+    background-color: rgba(196, 202, 204, 0.984);
+    width:auto;
+    height: 30px;
+    padding:10px;
+    border: 2px solid black;
+  
+    display: none;
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.Inputs{
+    width: auto;
+    height:30px;
+    background-color:  rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    outline:none;
+    text-align: center;
+}
+
+.Inputs:hover{
+    background-color: #083966;;
+    color: aliceblue;
+    border: 2px solid rgb(0, 9, 17);
+}
+
+.Hr{
+    display: none;
+}
+@media screen and (max-width:600px){
+    
+    .Header{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .Logo{
+        margin: auto;
+        padding: 15px;
+    }
+
+    .Btn{
+        width: 150px;
+        font-size: large;
+        color: black;
+        margin: auto;
+        
+    }
+
+    .PortalBtn{
+
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .Computation{
+        width: 100%;
+        height:83vh;        
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .Fields{
+        width:60%;
+        height: 60vh;
+        margin-left:12%;
+    }
+
+    .Inputs{
+        width: 95%;
+        height:49px;
+        font-size: large;
+    }
+
+    .Hr{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       background-color: #447bae;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    
+    hr{
+        width: 150px;
+        background-color: white;
+        border: 1.5px solid white;
+        margin: 0px 0px 10px 0px;
+        border-radius: 20px;
+    }
+
+    .Internal{
+        width: auto;
+    }
+    
+}
